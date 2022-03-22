@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/ambulance.obj-9c7602012a41fad1e55a1c960813977b.mesh"
+
+[deps]
+
+files=[ "res://.import/ambulance.obj-9c7602012a41fad1e55a1c960813977b.mesh" ]
+
+source_file="res://cars/Car packs/Models/OBJ format/ambulance.obj"
+dest_files=[ "res://.import/ambulance.obj-9c7602012a41fad1e55a1c960813977b.mesh", "res://.import/ambulance.obj-9c7602012a41fad1e55a1c960813977b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

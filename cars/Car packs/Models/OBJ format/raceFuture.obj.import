@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/raceFuture.obj-7b160d601d97934d75b49cb9e94a06eb.mesh"
+
+[deps]
+
+files=[ "res://.import/raceFuture.obj-7b160d601d97934d75b49cb9e94a06eb.mesh" ]
+
+source_file="res://cars/Car packs/Models/OBJ format/raceFuture.obj"
+dest_files=[ "res://.import/raceFuture.obj-7b160d601d97934d75b49cb9e94a06eb.mesh", "res://.import/raceFuture.obj-7b160d601d97934d75b49cb9e94a06eb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

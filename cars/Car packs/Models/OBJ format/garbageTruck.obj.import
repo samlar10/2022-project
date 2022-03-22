@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/garbageTruck.obj-d72a0e2eee8964c7f9be3181bdd6b669.mesh"
+
+[deps]
+
+files=[ "res://.import/garbageTruck.obj-d72a0e2eee8964c7f9be3181bdd6b669.mesh" ]
+
+source_file="res://cars/Car packs/Models/OBJ format/garbageTruck.obj"
+dest_files=[ "res://.import/garbageTruck.obj-d72a0e2eee8964c7f9be3181bdd6b669.mesh", "res://.import/garbageTruck.obj-d72a0e2eee8964c7f9be3181bdd6b669.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

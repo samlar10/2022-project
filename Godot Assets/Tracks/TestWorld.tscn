@@ -1,39 +1,17 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://cars/DemoCar.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Godot Assets/Tracks/Basic_track.tscn" type="PackedScene" id=2]
-[ext_resource path="res://cars/hatchbackSports_AI.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Godot Assets/Tracks/Basic_track2.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Godot Assets/Code/TestWorld.gd" type="Script" id=3]
 [ext_resource path="res://Godot Assets/Cars/carTruck.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Godot Assets/Code/Path.gd" type="Script" id=5]
-
-[sub_resource type="Curve3D" id=1]
-_data = {
-"points": PoolVector3Array( 0, 0, 0, 0, 0, 0, -63.9158, 0, 16.6008, 0, 0, 0, 0, 0, 0, -64.655, 0, -20.1746, -10.3465, 0, 7.11322, 10.3465, 0, -7.11322, -54.5379, 4.41074e-06, -52.1189, 0, 0, 0, 0, 0, 0, -35.1383, 4.41074e-06, -62.2499, 0, 0, 0, 0, 0, 0, -26.0851, 4.41074e-06, -62.2499, 0, 0, 0, 0, 0, 0, -10.9964, 4.41074e-06, -51.2567, 7.11322, 0, -12.0709, -7.11322, 0, 12.0709, 1.50559, 4.41074e-06, -19.5706, 0, 0, 0, 0, 0, 0, -7.30836, 4.41074e-06, -1.62849, -10.8667, 0, -2.17335, 10.8667, 0, 2.17335, 6.00543, 4.41074e-06, 19.6006, 0, 0, 0, 0, 0, 0, 23.2564, 4.41074e-06, 2.75715, 0, 0, 0, 0, 0, 0, 22.1697, 4.41074e-06, -19.1122, 0, 0, 0, 0, 0, 0, 17.3109, 4.41074e-06, -40.9558, -14.5824, 0, 1.50851, 14.5824, 0, -1.50851, 42.4529, 4.41074e-06, -67.6063, 0, 0, 0, 0, 0, 0, 66.0864, 4.41074e-06, -45.7327, 0, 0, 0, 0, 0, 0, 61.9542, 3.83837, 24.7703, 18.5375, 0, -8.40654, -18.5375, 0, 8.40654, 43.1071, 3.83837, 52.2083, 0, 0, 0, 0, 0, 0, 15.732, 3.83837, 58.0282, 0, 0, 0, 0, 0, 0, 11.7784, 3.85151, 55.8732, 0, 0, 0, 0, 0, 0, -0.13018, 0.468052, 54.6214, 0, 0, 0, 0, 0, 0, -21.521, 0.468053, 48.2921, 10.4569, 0, -0.475315, -10.4569, 0, 0.475315, -37.1572, 0.468053, 46.502, 3.48561, 0, 3.32718, -3.48561, 0, -3.32718, -56.4865, 0.468053, 47.2942, 0, 0, 0, 0, 0, 0, -64.0915, 0.468053, 21.9443, 0, 0, 0, 0, 0, 0, -63.9158, 0, 16.6008 ),
-"tilts": PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 )
-}
 
 [node name="TestWorld" type="Spatial"]
+script = ExtResource( 3 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.468238, 0.883602, 0, -0.883602, 0.468238, 0, 31.0751, 0 )
 shadow_enabled = true
 
-[node name="DemoCar" parent="." instance=ExtResource( 1 )]
-transform = Transform( 0.999432, 0, 0.0336959, 0, 1, 0, -0.0336959, 0, 0.999432, -60.5079, 3.19391, 24.306 )
-
-[node name="Basic_track" parent="." instance=ExtResource( 2 )]
-transform = Transform( -1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, 0, 0, 0 )
-
-[node name="hatchbackSports" parent="." instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -11.7045, 1.03091, -41.4193 )
+[node name="Basic_track" parent="." instance=ExtResource( 1 )]
 
 [node name="carTruck" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -63.7269, 4.38715, 8.10359 )
-
-[node name="Path" type="Path" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.492, 0 )
-curve = SubResource( 1 )
-script = ExtResource( 5 )
-
-[node name="PathFollow" type="PathFollow" parent="Path"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -63.9158, 0, 16.6008 )
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -78.5153, 2.5561, 0 )

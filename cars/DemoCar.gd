@@ -7,6 +7,7 @@ func get_input():
 	$tmpParent/sedanSports/wheel_frontRight.rotation.y = steer_angle*2
 	$tmpParent/sedanSports/wheel_frontLeft.rotation.y = steer_angle*2
 	acceleration = Vector3.ZERO
+
 	
 	if Input.is_action_pressed("accelerate"):
 		acceleration = -transform.basis.z * engine_power

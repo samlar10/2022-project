@@ -61,6 +61,7 @@ func align_with_y(xform, new_y):
 	xform.basis = xform.basis.orthonormalized()
 	return xform
 
+
+
 func get_input():
-	# Override this in inherited scripts for controls
 	pass

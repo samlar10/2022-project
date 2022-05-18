@@ -10,9 +10,9 @@ onready var body_mesh = $CarMesh/tmpParent/truck/body
 
 export (bool) var show_debug = false
 var sphere_offset = Vector3(0, -1.5, .5)
-var acceleration = 50
-var steering = 10
-var turn_speed = 21
+var acceleration = 45
+var steering = 40
+var turn_speed = 20
 var turn_stop_limit = 0.75
 var body_tilt = 35
 
@@ -20,11 +20,9 @@ var speed_input = 0
 var rotate_input = 0
 
 # ai
-var num_rays = 64
-var look_ahead = 24
-var brake_distance = 2
-
-
+var num_rays = 32.0
+var look_ahead = 12.0
+var brake_distance = 5.0
 var interest = []
 var danger = []
 var chosen_dir = Vector3.ZERO
@@ -121,7 +119,7 @@ func _physics_process(delta):
 	car_mesh.transform.origin.x = ball.transform.origin.x + sphere_offset.x
 	car_mesh.transform.origin.z = ball.transform.origin.z + sphere_offset.z
 	car_mesh.transform.origin.y = lerp(car_mesh.transform.origin.y, ball.transform.origin.y + sphere_offset.y, 1 * delta)
-	car_mesh.transform.origin = lerp(car_mesh.transform.origin, ball.transform.origin + sphere_offset, 0.3)
+#	car_mesh.transform.origin = lerp(car_mesh.transform.origin, ball.transform.origin + sphere_offset, 0.3)
 	ball.add_central_force(-car_mesh.global_transform.basis.z * speed_input)
 
 func align_with_y(xform, new_y):

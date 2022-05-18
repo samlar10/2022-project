@@ -32,7 +32,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0 )
 enabled = true
 
 [node name="ContextRays" type="Spatial" parent="CarMesh"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.577621, -1.83283 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.577621, -0.774999 )
 
 [node name="Camera" type="Camera" parent="CarMesh"]
 transform = Transform( 1, 0, 0, 0, 0.832806, 0.553566, 0, -0.553566, 0.832806, 0, 5.7831, 5.94622 )

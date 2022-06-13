@@ -41,7 +41,7 @@ transform = Transform( 1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0
 
 [node name="Ball" type="RigidBody" parent="."]
 physics_material_override = SubResource( 1 )
-gravity_scale = 10.0
+gravity_scale = 9.8
 angular_damp = 5.0
 
 [node name="CollisionShape" type="CollisionShape" parent="Ball"]

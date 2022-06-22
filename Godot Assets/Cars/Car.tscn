@@ -157,7 +157,6 @@ material/5 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.31012e-14, 0.2, -0.15 )
-visible = false
 shape = SubResource( 2 )
 
 [node name="front_left_wheel" type="VehicleWheel" parent="."]
@@ -227,3 +226,9 @@ transform = Transform( 1, 0, 0, 0, 0.942128, 0.335254, 0, -0.335254, 0.942128, 0
 
 [node name="Position3D2" type="Position3D" parent="CameraPositions"]
 transform = Transform( 1, 0, 0, 0, 0.92589, 0.377792, 0, -0.377792, 0.92589, 0, 4.91119, 6.03775 )
+
+[node name="Position3D3" type="Position3D" parent="CameraPositions"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.37028, 0.54998, 0 )
+
+[node name="Position3D4" type="Position3D" parent="CameraPositions"]
+transform = Transform( 0.965094, 0, 0.261903, 0, 1, 0, -0.261903, 0, 0.965094, 1.07175, 0.185349, 0.162555 )

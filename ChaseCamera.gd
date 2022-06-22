@@ -1,6 +1,6 @@
 extends Camera
 
-export var lerp_speed = 10.0
+export var lerp_speed = 50.0
 
 var target = null
 
@@ -13,5 +13,6 @@ func _ready():
 	pass
 
 
-func _on_Car_change_camera(t):
+
+func _on_Impreza_change_camera(t):
 	target = t

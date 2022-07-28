@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/LP Small Pine Tree.obj-5d544a256ea725820409c2eb6feb4a80.mesh"
+
+[deps]
+
+files=[ "res://.import/LP Small Pine Tree.obj-5d544a256ea725820409c2eb6feb4a80.mesh" ]
+
+source_file="res://assets/F.T.P/pine trees/Small/LP Small Pine Tree.obj"
+dest_files=[ "res://.import/LP Small Pine Tree.obj-5d544a256ea725820409c2eb6feb4a80.mesh", "res://.import/LP Small Pine Tree.obj-5d544a256ea725820409c2eb6feb4a80.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

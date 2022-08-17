@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/CylinderBarrierBaseColor.png-090ced9291475e424227ea30e6fa3f4b.s3tc.stex"
-path.etc2="res://.import/CylinderBarrierBaseColor.png-090ced9291475e424227ea30e6fa3f4b.etc2.stex"
+path.s3tc="res://.import/CylinderBarrierBaseColor.png-ba60a1ba0447629c95e8b96d0fdf0937.s3tc.stex"
+path.etc2="res://.import/CylinderBarrierBaseColor.png-ba60a1ba0447629c95e8b96d0fdf0937.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/TrackAssetsPack/textures/CylinderBarrierBaseColor.png"
-dest_files=[ "res://.import/CylinderBarrierBaseColor.png-090ced9291475e424227ea30e6fa3f4b.s3tc.stex", "res://.import/CylinderBarrierBaseColor.png-090ced9291475e424227ea30e6fa3f4b.etc2.stex" ]
+source_file="res://assets/TrackAssetsPack/Textures/CylinderBarrierBaseColor.png"
+dest_files=[ "res://.import/CylinderBarrierBaseColor.png-ba60a1ba0447629c95e8b96d0fdf0937.s3tc.stex", "res://.import/CylinderBarrierBaseColor.png-ba60a1ba0447629c95e8b96d0fdf0937.etc2.stex" ]
 
 [params]
 

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/SpeedBoosterVar03BaseColor.png-8497696553497cfab99be89cfef99c26.s3tc.stex"
-path.etc2="res://.import/SpeedBoosterVar03BaseColor.png-8497696553497cfab99be89cfef99c26.etc2.stex"
+path.s3tc="res://.import/SpeedBoosterVar03BaseColor.png-5f3c98af017a44c7e97cd7a202f57989.s3tc.stex"
+path.etc2="res://.import/SpeedBoosterVar03BaseColor.png-5f3c98af017a44c7e97cd7a202f57989.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/TrackAssetsPack/textures/SpeedBoosterVar03BaseColor.png"
-dest_files=[ "res://.import/SpeedBoosterVar03BaseColor.png-8497696553497cfab99be89cfef99c26.s3tc.stex", "res://.import/SpeedBoosterVar03BaseColor.png-8497696553497cfab99be89cfef99c26.etc2.stex" ]
+source_file="res://assets/TrackAssetsPack/Textures/SpeedBoosterVar03BaseColor.png"
+dest_files=[ "res://.import/SpeedBoosterVar03BaseColor.png-5f3c98af017a44c7e97cd7a202f57989.s3tc.stex", "res://.import/SpeedBoosterVar03BaseColor.png-5f3c98af017a44c7e97cd7a202f57989.etc2.stex" ]
 
 [params]
 

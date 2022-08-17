@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/ManholeBaseColor.png-75f4774cb98b5c1815d586a11ebcce26.s3tc.stex"
-path.etc2="res://.import/ManholeBaseColor.png-75f4774cb98b5c1815d586a11ebcce26.etc2.stex"
+path.s3tc="res://.import/ManholeBaseColor.png-cb86695c028c9cc3346a6fc3bd1171ca.s3tc.stex"
+path.etc2="res://.import/ManholeBaseColor.png-cb86695c028c9cc3346a6fc3bd1171ca.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/TrackAssetsPack/textures/ManholeBaseColor.png"
-dest_files=[ "res://.import/ManholeBaseColor.png-75f4774cb98b5c1815d586a11ebcce26.s3tc.stex", "res://.import/ManholeBaseColor.png-75f4774cb98b5c1815d586a11ebcce26.etc2.stex" ]
+source_file="res://assets/TrackAssetsPack/Textures/ManholeBaseColor.png"
+dest_files=[ "res://.import/ManholeBaseColor.png-cb86695c028c9cc3346a6fc3bd1171ca.s3tc.stex", "res://.import/ManholeBaseColor.png-cb86695c028c9cc3346a6fc3bd1171ca.etc2.stex" ]
 
 [params]
 

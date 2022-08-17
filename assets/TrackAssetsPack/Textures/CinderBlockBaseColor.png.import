@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/CinderBlockBaseColor.png-708aeb8c743f144d4bf9ccbe48ba0f4d.s3tc.stex"
-path.etc2="res://.import/CinderBlockBaseColor.png-708aeb8c743f144d4bf9ccbe48ba0f4d.etc2.stex"
+path.s3tc="res://.import/CinderBlockBaseColor.png-fe37beb9269f29945760bc4cc8922b78.s3tc.stex"
+path.etc2="res://.import/CinderBlockBaseColor.png-fe37beb9269f29945760bc4cc8922b78.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/TrackAssetsPack/textures/CinderBlockBaseColor.png"
-dest_files=[ "res://.import/CinderBlockBaseColor.png-708aeb8c743f144d4bf9ccbe48ba0f4d.s3tc.stex", "res://.import/CinderBlockBaseColor.png-708aeb8c743f144d4bf9ccbe48ba0f4d.etc2.stex" ]
+source_file="res://assets/TrackAssetsPack/Textures/CinderBlockBaseColor.png"
+dest_files=[ "res://.import/CinderBlockBaseColor.png-fe37beb9269f29945760bc4cc8922b78.s3tc.stex", "res://.import/CinderBlockBaseColor.png-fe37beb9269f29945760bc4cc8922b78.etc2.stex" ]
 
 [params]
 

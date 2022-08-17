@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/BrickBaseColor.png-916b91ff10d612be81b24c4e47c45c9e.s3tc.stex"
-path.etc2="res://.import/BrickBaseColor.png-916b91ff10d612be81b24c4e47c45c9e.etc2.stex"
+path.s3tc="res://.import/BrickBaseColor.png-1f07021633d8bbb29b2d86e63344ab75.s3tc.stex"
+path.etc2="res://.import/BrickBaseColor.png-1f07021633d8bbb29b2d86e63344ab75.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/TrackAssetsPack/textures/BrickBaseColor.png"
-dest_files=[ "res://.import/BrickBaseColor.png-916b91ff10d612be81b24c4e47c45c9e.s3tc.stex", "res://.import/BrickBaseColor.png-916b91ff10d612be81b24c4e47c45c9e.etc2.stex" ]
+source_file="res://assets/TrackAssetsPack/Textures/BrickBaseColor.png"
+dest_files=[ "res://.import/BrickBaseColor.png-1f07021633d8bbb29b2d86e63344ab75.s3tc.stex", "res://.import/BrickBaseColor.png-1f07021633d8bbb29b2d86e63344ab75.etc2.stex" ]
 
 [params]
 

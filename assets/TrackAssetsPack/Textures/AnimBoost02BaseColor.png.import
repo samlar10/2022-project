@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/AnimBoost02BaseColor.png-77893010537d31e8cda96c5139447268.s3tc.stex"
-path.etc2="res://.import/AnimBoost02BaseColor.png-77893010537d31e8cda96c5139447268.etc2.stex"
+path.s3tc="res://.import/AnimBoost02BaseColor.png-c50c42765b8315dfa5cc664d9c060f67.s3tc.stex"
+path.etc2="res://.import/AnimBoost02BaseColor.png-c50c42765b8315dfa5cc664d9c060f67.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/TrackAssetsPack/textures/AnimBoost02BaseColor.png"
-dest_files=[ "res://.import/AnimBoost02BaseColor.png-77893010537d31e8cda96c5139447268.s3tc.stex", "res://.import/AnimBoost02BaseColor.png-77893010537d31e8cda96c5139447268.etc2.stex" ]
+source_file="res://assets/TrackAssetsPack/Textures/AnimBoost02BaseColor.png"
+dest_files=[ "res://.import/AnimBoost02BaseColor.png-c50c42765b8315dfa5cc664d9c060f67.s3tc.stex", "res://.import/AnimBoost02BaseColor.png-c50c42765b8315dfa5cc664d9c060f67.etc2.stex" ]
 
 [params]
 

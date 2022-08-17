@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/TyreBaseColor.png-ee8f23485f30566e8127600dff37c211.s3tc.stex"
-path.etc2="res://.import/TyreBaseColor.png-ee8f23485f30566e8127600dff37c211.etc2.stex"
+path.s3tc="res://.import/TyreBaseColor.png-b3f111c0c050895a58fe93db038d15b6.s3tc.stex"
+path.etc2="res://.import/TyreBaseColor.png-b3f111c0c050895a58fe93db038d15b6.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/TrackAssetsPack/textures/TyreBaseColor.png"
-dest_files=[ "res://.import/TyreBaseColor.png-ee8f23485f30566e8127600dff37c211.s3tc.stex", "res://.import/TyreBaseColor.png-ee8f23485f30566e8127600dff37c211.etc2.stex" ]
+source_file="res://assets/TrackAssetsPack/Textures/TyreBaseColor.png"
+dest_files=[ "res://.import/TyreBaseColor.png-b3f111c0c050895a58fe93db038d15b6.s3tc.stex", "res://.import/TyreBaseColor.png-b3f111c0c050895a58fe93db038d15b6.etc2.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TyreBaseColorGreen.png-4ce68e192c55783f29253630c2850b9d.stex"
+path="res://.import/TyreBaseColorGreen.png-7ce394aaa35ce6b3ba149478252d5d72.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/TrackAssetsPack/textures/TyreBaseColorGreen.png"
-dest_files=[ "res://.import/TyreBaseColorGreen.png-4ce68e192c55783f29253630c2850b9d.stex" ]
+source_file="res://assets/TrackAssetsPack/Textures/TyreBaseColorGreen.png"
+dest_files=[ "res://.import/TyreBaseColorGreen.png-7ce394aaa35ce6b3ba149478252d5d72.stex" ]
 
 [params]
 

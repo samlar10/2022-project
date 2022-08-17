@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SpeedBoosterVar02Emit.png-b18a1aa67988e4d6e898a17fc45d56ac.stex"
+path="res://.import/SpeedBoosterVar02Emit.png-bb68d1896b0fc53a4d1de6dae1c3879b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/TrackAssetsPack/textures/SpeedBoosterVar02Emit.png"
-dest_files=[ "res://.import/SpeedBoosterVar02Emit.png-b18a1aa67988e4d6e898a17fc45d56ac.stex" ]
+source_file="res://assets/TrackAssetsPack/Textures/SpeedBoosterVar02Emit.png"
+dest_files=[ "res://.import/SpeedBoosterVar02Emit.png-bb68d1896b0fc53a4d1de6dae1c3879b.stex" ]
 
 [params]
 

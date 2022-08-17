@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/CinderSquareBaseColor.png-b127c088368893b6754d793a5f0ae5c1.s3tc.stex"
-path.etc2="res://.import/CinderSquareBaseColor.png-b127c088368893b6754d793a5f0ae5c1.etc2.stex"
+path.s3tc="res://.import/CinderSquareBaseColor.png-64d24a30b144f34d35b2c306301e1ccd.s3tc.stex"
+path.etc2="res://.import/CinderSquareBaseColor.png-64d24a30b144f34d35b2c306301e1ccd.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/TrackAssetsPack/textures/CinderSquareBaseColor.png"
-dest_files=[ "res://.import/CinderSquareBaseColor.png-b127c088368893b6754d793a5f0ae5c1.s3tc.stex", "res://.import/CinderSquareBaseColor.png-b127c088368893b6754d793a5f0ae5c1.etc2.stex" ]
+source_file="res://assets/TrackAssetsPack/Textures/CinderSquareBaseColor.png"
+dest_files=[ "res://.import/CinderSquareBaseColor.png-64d24a30b144f34d35b2c306301e1ccd.s3tc.stex", "res://.import/CinderSquareBaseColor.png-64d24a30b144f34d35b2c306301e1ccd.etc2.stex" ]
 
 [params]
 

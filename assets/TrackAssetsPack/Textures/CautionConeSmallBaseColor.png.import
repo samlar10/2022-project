@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/CautionConeSmallBaseColor.png-dd5c7ee8dbeb9bda2e2201d31e40d07d.s3tc.stex"
-path.etc2="res://.import/CautionConeSmallBaseColor.png-dd5c7ee8dbeb9bda2e2201d31e40d07d.etc2.stex"
+path.s3tc="res://.import/CautionConeSmallBaseColor.png-28b0f9214e8617187a6f727d1e36395a.s3tc.stex"
+path.etc2="res://.import/CautionConeSmallBaseColor.png-28b0f9214e8617187a6f727d1e36395a.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/TrackAssetsPack/textures/CautionConeSmallBaseColor.png"
-dest_files=[ "res://.import/CautionConeSmallBaseColor.png-dd5c7ee8dbeb9bda2e2201d31e40d07d.s3tc.stex", "res://.import/CautionConeSmallBaseColor.png-dd5c7ee8dbeb9bda2e2201d31e40d07d.etc2.stex" ]
+source_file="res://assets/TrackAssetsPack/Textures/CautionConeSmallBaseColor.png"
+dest_files=[ "res://.import/CautionConeSmallBaseColor.png-28b0f9214e8617187a6f727d1e36395a.s3tc.stex", "res://.import/CautionConeSmallBaseColor.png-28b0f9214e8617187a6f727d1e36395a.etc2.stex" ]
 
 [params]
 

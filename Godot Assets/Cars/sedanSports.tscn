@@ -142,8 +142,8 @@ surfaces/1 = {
 extents = Vector3( 0.668274, 0.450266, 1.24191 )
 
 [sub_resource type="CylinderShape" id=5]
-radius = 0.294813
 height = 1.27421
+radius = 0.294813
 
 [node name="sedanSports" type="KinematicBody"]
 script = ExtResource( 8 )
@@ -155,42 +155,26 @@ script = ExtResource( 8 )
 [node name="body" type="MeshInstance" parent="tmpParent/sedanSports"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4545e-14, 0.2, 0 )
 mesh = SubResource( 1 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-material/5 = null
 
 [node name="spoiler" type="MeshInstance" parent="tmpParent/sedanSports/body"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.05338e-15, 0.4, 1.06869 )
 mesh = SubResource( 2 )
-material/0 = null
-material/1 = null
 
 [node name="wheel_backLeft" type="MeshInstance" parent="tmpParent/sedanSports"]
 transform = Transform( -1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35, 0.3, 0.66 )
 mesh = SubResource( 3 )
-material/0 = null
-material/1 = null
 
 [node name="wheel_backRight" type="MeshInstance" parent="tmpParent/sedanSports"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.35, 0.3, 0.66 )
 mesh = SubResource( 3 )
-material/0 = null
-material/1 = null
 
 [node name="wheel_frontLeft" type="MeshInstance" parent="tmpParent/sedanSports"]
 transform = Transform( -1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35, 0.3, -0.66 )
 mesh = SubResource( 3 )
-material/0 = null
-material/1 = null
 
 [node name="wheel_frontRight" type="MeshInstance" parent="tmpParent/sedanSports"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.35, 0.3, -0.66 )
 mesh = SubResource( 3 )
-material/0 = null
-material/1 = null
 
 [node name="Collisionbody" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65855, 0 )

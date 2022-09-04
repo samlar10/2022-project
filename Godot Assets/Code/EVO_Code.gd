@@ -1,4 +1,4 @@
-extends KinematicBody
+extends "res://Godot Assets/Code/car_base.gd"
 
 onready var EVO = $EVO_Body
 onready var ground_ray = $RayCast
@@ -6,21 +6,7 @@ onready var ground_ray = $RayCast
 onready var right_wheel = $EVO_Body/FR
 onready var left_wheel = $EVO_Body/FL
 
- 
-export var gravity = -20.0
-export var wheel_base = 0.6
-export var steering_limit = 10.0
-export var engine_power = 6.0
-export var braking = -9.0
-export var friction = -2.0
-export var drag = -2.0
-export var max_speed_reverse = 3.0
-
-var acceleration = Vector3.ZERO
-var velocity = Vector3.ZERO
-var steer_angle = 0.0
- 
-var num_rays = 32.0
+var num_rays = 32
 var look_ahead = 12.0
 var brake_distance = 2.0
 var interest = []
@@ -36,6 +22,19 @@ func _ready():
 	danger.resize(num_rays)
 	add_rays()
 
+func get_input():
+#	var turn = Input.get_action_strength("steer_left")/3
+#	turn -= Input.get_action_strength("steer_right") /3
+#	steer_angle = turn * deg2rad(steering_limit)
+#	$tmpParent/sedanSports/wheel_frontRight.rotation.y = steer_angle*2
+#	$tmpParent/sedanSports/wheel_frontLeft.rotation.y = steer_angle*2
+#	acceleration = Vector3.ZERO
+#	if Input.is_action_pressed("accelerate"):
+#		acceleration = -transform.basis.z * engine_power
+#	if Input.is_action_pressed("brake"):
+#		acceleration = -transform.basis.z * braking
+	pass
+
 func add_rays():
 	var angle = 2 * PI / num_rays
 	for i in num_rays:
@@ -46,20 +45,20 @@ func add_rays():
 		r.enabled = true
 	forward_ray = $ContextRays.get_child(0)
 
-#func set_interest():
-#	var path_direction = -car_mesh.transform.basis.z
-#	if owner and owner.has_method("get_path_direction"):
-#		path_direction = owner.get_path_direction(ball.global_transform.origin)
-#	for i in num_rays:
-#		var d = -$ContextRays.get_child(i).global_transform.basis.z
-#		d = d.dot(path_direction)
-#		interest[i] = max(0, d)
+func set_interest():
+	var path_direction = -EVO.transform.basis.z
+	if owner and owner.has_method("get_path_direction"):
+		path_direction = owner.get_path_direction(EVO.global_transform.origin)
+	for i in num_rays:
+		var d = -$ContextRays.get_child(i).global_transform.basis.z
+		d = d.dot(path_direction)
+		interest[i] = max(0, d)
 
 func set_danger():
 	for i in num_rays:
 		var ray = $ContextRays.get_child(i)
 		danger[i] = 1.0 if ray.is_colliding() else 0.0
-
+		
 func choose_direction():
 	for i in num_rays:
 		if danger[i] > 0.0:
@@ -70,19 +69,8 @@ func choose_direction():
 	chosen_dir = chosen_dir.normalized()
 
 func angle_dir(fwd, target, up):
+	# Returns how far "target" vector is to the left (negative)
+	# or right (positive) of "fwd" vector.
 	var p = fwd.cross(target)
 	var dir = p.dot(up)
 	return dir
-
-
-
-func _physics_process(delta):
-	if is_on_floor():
-		set_interest()
-		set_danger()
-		choose_direction()
-	acceleration.y = gravity
-	velocity += acceleration * delta
-	velocity = move_and_slide_with_snap(velocity, -transform.basis.y, Vector3.UP, true)
-	
-	speed_input = acceleration

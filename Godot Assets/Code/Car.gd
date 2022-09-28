@@ -1,6 +1,6 @@
 extends VehicleBody
 
-export var max_rpm = 300
+export var max_rpm = 500
 export var max_torque = 200
 
 signal change_camera

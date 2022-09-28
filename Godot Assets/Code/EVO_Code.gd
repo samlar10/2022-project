@@ -1,4 +1,4 @@
-extends "res://Godot Assets/Code/car_base.gd"
+extends KinematicBody #"res://Godot Assets/Code/car_base.gd"
 
 onready var EVO = $EVO_Body
 onready var ground_ray = $RayCast
@@ -13,6 +13,7 @@ var interest = []
 var danger = []
 var chosen_dir = Vector3.ZERO
 var forward_ray
+var acceleration = Vector3.ZERO
 
 func _ready():
 	ground_ray.add_exception(EVO)
@@ -20,7 +21,7 @@ func _ready():
 	acceleration *= rand_range(0.9, 1.1)
 	interest.resize(num_rays)
 	danger.resize(num_rays)
-	add_rays()
+	#add_rays()
 
 func get_input():
 #	var turn = Input.get_action_strength("steer_left")/3
@@ -36,7 +37,7 @@ func get_input():
 	pass
 
 func add_rays():
-	var angle = 2 * PI / num_rays
+	var angle = 2*  PI / num_rays
 	for i in num_rays:
 		var r = RayCast.new()
 		$ContextRays.add_child(r)
@@ -44,7 +45,7 @@ func add_rays():
 		r.rotation.y = -angle * i
 		r.enabled = true
 	forward_ray = $ContextRays.get_child(0)
-
+	
 func set_interest():
 	var path_direction = -EVO.transform.basis.z
 	if owner and owner.has_method("get_path_direction"):
@@ -74,3 +75,12 @@ func angle_dir(fwd, target, up):
 	var p = fwd.cross(target)
 	var dir = p.dot(up)
 	return dir
+
+func _physics_process(delta):
+	pass
+#	for i in $ContextRays.get_children():
+#		if i.is_colliding():
+#			print(i.name, i.get_parent().name, i.get_collider().name)
+#		else:
+#			print(i.name, i.get_parent().name,"not colliding")
+#	print("########################")

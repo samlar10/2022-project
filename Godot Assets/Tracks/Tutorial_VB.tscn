@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=2]
+
+[sub_resource type="CubeMesh" id=1]
+size = Vector3( 50, 1, 50 )
+
+[sub_resource type="CubeMesh" id=2]
+size = Vector3( 1.5, 0.5, 3 )
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.94902, 0.141176, 0.141176, 1 )
+
+[sub_resource type="ConvexPolygonShape" id=4]
+points = PoolVector3Array( -0.7225, -0.25, -1.43083, 0.694167, 0.25, 1.37472, -0.694167, 0.25, 1.37472, 0.7225, -0.25, 1.43083, 0.694167, 0.25, -1.37472, -0.7225, -0.25, 1.43083, 0.7225, -0.25, -1.43083, -0.694167, 0.25, -1.37472 )
+
+[node name="Tutorial_VB" type="Spatial"]
+
+[node name="Ground" type="MeshInstance" parent="."]
+mesh = SubResource( 1 )
+
+[node name="VehicleBody" type="VehicleBody" parent="."]
+
+[node name="car_body_mesh" type="MeshInstance" parent="VehicleBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2031, 0 )
+mesh = SubResource( 2 )
+material/0 = SubResource( 3 )
+
+[node name="CollisionShape" type="CollisionShape" parent="VehicleBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2031, 0 )
+shape = SubResource( 4 )
+
+[node name="front_left_wheel" type="VehicleWheel" parent="VehicleBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.955091, 1.18785, 0.829735 )
+wheel_radius = 0.4

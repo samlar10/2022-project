@@ -334,6 +334,7 @@ surfaces/3 = {
 
 [node name="Impreza" type="VehicleBody"]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0 )
+mass = 86.71
 script = ExtResource( 13 )
 
 [node name="Body" type="MeshInstance" parent="."]
@@ -345,11 +346,12 @@ transform = Transform( 0.468621, 0, 0, 0, 0.468621, 0, 0, 0, 0.604872, -0.882405
 shape = SubResource( 6 )
 
 [node name="FL" type="VehicleWheel" parent="."]
-transform = Transform( -4.37114e-08, 0, -0.7, 0, 0.7, 0, 1, 0, -3.0598e-08, -1.79477, -0.588738, 0.818022 )
+transform = Transform( -4.37114e-08, 0, -0.7, 0, 0.7, 0, 1, 0, -3.0598e-08, -1.79477, -0.444542, 0.818022 )
 use_as_steering = true
+wheel_roll_influence = 0.0
 wheel_rest_length = 0.25
 suspension_travel = 0.25
-suspension_stiffness = 50.0
+suspension_stiffness = 100.0
 damping_compression = 0.98
 damping_relaxation = 0.95
 
@@ -359,11 +361,14 @@ mesh = SubResource( 3 )
 skeleton = NodePath("")
 
 [node name="FR" type="VehicleWheel" parent="."]
-transform = Transform( -4.37114e-08, 0, -0.7, 0, 0.7, 0, 1, 0, -3.0598e-08, -1.795, -0.589, -0.818 )
+transform = Transform( -4.37114e-08, 0, -0.7, 0, 0.7, 0, 1, 0, -3.0598e-08, -1.795, -0.444804, -0.818 )
 use_as_steering = true
 wheel_roll_influence = 0.0
-damping_compression = 0.8
-damping_relaxation = 1.0
+wheel_rest_length = 0.25
+suspension_travel = 0.25
+suspension_stiffness = 100.0
+damping_compression = 0.98
+damping_relaxation = 0.95
 
 [node name="FR_wheel" type="MeshInstance" parent="FR"]
 transform = Transform( 2.41588e-07, 3.6739e-06, -0.604872, -6.84159e-13, 0.669458, 4.06618e-06, 0.669458, -7.75925e-13, 2.40389e-07, 0.0155582, -0.00174314, 0.00401902 )
@@ -371,11 +376,14 @@ mesh = SubResource( 5 )
 skeleton = NodePath("")
 
 [node name="BL" type="VehicleWheel" parent="."]
-transform = Transform( -4.37114e-08, 0, -0.7, 0, 0.7, 0, 1, 0, -3.0598e-08, 1.194, -0.589, 0.818 )
+transform = Transform( -4.37114e-08, 0, -0.7, 0, 0.7, 0, 1, 0, -3.0598e-08, 1.194, -0.444804, 0.818 )
 use_as_traction = true
 wheel_roll_influence = 0.0
-damping_compression = 0.8
-damping_relaxation = 1.0
+wheel_rest_length = 0.25
+suspension_travel = 0.25
+suspension_stiffness = 100.0
+damping_compression = 0.98
+damping_relaxation = 0.95
 
 [node name="BL_wheel" type="MeshInstance" parent="BL"]
 transform = Transform( -3.80418e-08, 0, 0.604872, 0, 0.669458, 0, -0.669458, 0, -1.51084e-08, -0.0140917, -0.00174981, 0.00030303 )
@@ -383,11 +391,14 @@ mesh = SubResource( 2 )
 skeleton = NodePath("")
 
 [node name="BR" type="VehicleWheel" parent="."]
-transform = Transform( -4.37114e-08, 0, -0.7, 0, 0.7, 0, 1, 0, -3.0598e-08, 1.194, -0.589, -0.818 )
+transform = Transform( -4.37114e-08, 0, -0.7, 0, 0.7, 0, 1, 0, -3.0598e-08, 1.194, -0.444804, -0.818 )
 use_as_traction = true
 wheel_roll_influence = 0.0
-damping_compression = 0.8
-damping_relaxation = 1.0
+wheel_rest_length = 0.25
+suspension_travel = 0.25
+suspension_stiffness = 100.0
+damping_compression = 0.98
+damping_relaxation = 0.95
 
 [node name="BR_wheel" type="MeshInstance" parent="BR"]
 transform = Transform( 1.08802e-07, 3.6739e-06, -0.604872, -6.84159e-13, 0.669458, 6.7744e-06, 0.669458, -2.00098e-13, 1.45584e-07, 0.0155584, -0.00174314, 0.00030303 )

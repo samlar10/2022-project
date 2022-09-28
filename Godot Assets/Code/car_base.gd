@@ -1,6 +1,6 @@
 extends KinematicBody
 
-#export var gravity = -20.0
+export var gravity = -20.0
 export var wheel_base = 0.6
 export var steering_limit = 10.0
 export var engine_power = 6.0

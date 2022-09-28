@@ -9,15 +9,18 @@
 script = ExtResource( 5 )
 
 [node name="ChaseCamera" parent="." instance=ExtResource( 3 )]
+far = 8192.0
 
 [node name="Impreza" parent="." instance=ExtResource( 2 )]
 transform = Transform( 0.667001, 0, 0.745057, 0, 1, 0, -0.745057, 0, 0.667001, 158.381, 1.18919, 0 )
+mass = 25.707
 
 [node name="Highlands_track" parent="." instance=ExtResource( 1 )]
 transform = Transform( 7, 0, 0, 0, 7, 0, 0, 0, 7, 0, 0, 0 )
+max_speed = 5
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( 0.667, 0, 0.745057, 0, 1, 0, -0.745057, 0, 0.667, -29.4418, 300.012, -30.1631 )
+transform = Transform( 0.667, 0, 0.745057, 0, 1, 0, -0.745057, 0, 0.667, -29.4418, 363.511, -30.1631 )
 light_energy = 0.561
 light_indirect_energy = 0.0
 shadow_enabled = true

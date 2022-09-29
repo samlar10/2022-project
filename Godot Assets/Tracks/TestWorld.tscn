@@ -12,8 +12,8 @@ script = ExtResource( 5 )
 far = 8192.0
 
 [node name="Impreza" parent="." instance=ExtResource( 2 )]
-transform = Transform( 0.667001, 0, 0.745057, 0, 1, 0, -0.745057, 0, 0.667001, 158.381, 1.18919, 0 )
-mass = 25.707
+transform = Transform( 0.466901, 0, 0.52154, 0, 0.7, 0, -0.52154, 0, 0.466901, 145.455, 0.716068, 11.2042 )
+mass = 168.33
 
 [node name="Highlands_track" parent="." instance=ExtResource( 1 )]
 transform = Transform( 7, 0, 0, 0, 7, 0, 0, 0, 7, 0, 0, 0 )

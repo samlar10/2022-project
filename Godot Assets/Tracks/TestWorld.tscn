@@ -1,19 +1,11 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Godot Assets/Tracks/Highlands_track.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Godot Assets/Cars/Impreza.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Godot Assets/nodes/ChaseCamera.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Godot Assets/Cars/Car_VB.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Godot Assets/Code/TestWorld.gd" type="Script" id=5]
 
 [node name="TestWorld" type="Spatial"]
 script = ExtResource( 5 )
-
-[node name="ChaseCamera" parent="." instance=ExtResource( 3 )]
-far = 8192.0
-
-[node name="Impreza" parent="." instance=ExtResource( 2 )]
-transform = Transform( 0.667001, 0, 0.745057, 0, 1, 0, -0.745057, 0, 0.667001, 145.455, 0.948676, 11.2042 )
-mass = 168.33
 
 [node name="Highlands_track" parent="." instance=ExtResource( 1 )]
 transform = Transform( 7, 0, 0, 0, 7, 0, 0, 0, 7, 0, 0, 0 )
@@ -25,4 +17,8 @@ light_energy = 0.561
 light_indirect_energy = 0.0
 shadow_enabled = true
 
-[connection signal="change_camera" from="Impreza" to="ChaseCamera" method="_on_Impreza_change_camera"]
+[node name="Car" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.861665, 0, -0.507478, 0, 1, 0, 0.507478, 0, 0.861665, 156.599, 0.749278, 0 )
+
+[node name="Camera" type="Camera" parent="Car"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 2.23238, -1.84974 )

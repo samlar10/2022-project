@@ -7,10 +7,6 @@
 [node name="TestWorld" type="Spatial"]
 script = ExtResource( 5 )
 
-[node name="Highlands_track" parent="." instance=ExtResource( 1 )]
-transform = Transform( 7, 0, 0, 0, 7, 0, 0, 0, 7, 0, 0, 0 )
-max_speed = 5
-
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( 0.667, 0, 0.745057, 0, 1, 0, -0.745057, 0, 0.667, -29.4418, 363.511, -30.1631 )
 light_energy = 0.561
@@ -18,7 +14,10 @@ light_indirect_energy = 0.0
 shadow_enabled = true
 
 [node name="Car" parent="." instance=ExtResource( 2 )]
-transform = Transform( 0.861665, 0, -0.507478, 0, 1, 0, 0.507478, 0, 0.861665, 156.599, 0.749278, 0 )
+transform = Transform( 0.861665, 0, -0.507478, 0, 1, 0, 0.507478, 0, 0.861665, 154.734, -0.320591, 0 )
 
 [node name="Camera" type="Camera" parent="Car"]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 2.23238, -1.84974 )
+
+[node name="Highlands_track" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7, 0, 0, 0, 7, 0, 0, 0, 7, 0, 0, 0 )

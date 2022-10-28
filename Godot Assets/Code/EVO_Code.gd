@@ -6,6 +6,8 @@ onready var ground_ray = $RayCast
 onready var right_wheel = $EVO_Body/FR
 onready var left_wheel = $EVO_Body/FL
 
+var steer_angle = 2
+var steering_limit = 4
 var num_rays = 32
 var look_ahead = 12.0
 var brake_distance = 2.0
@@ -24,16 +26,16 @@ func _ready():
 	#add_rays()
 
 func get_input():
-#	var turn = Input.get_action_strength("steer_left")/3
-#	turn -= Input.get_action_strength("steer_right") /3
-#	steer_angle = turn * deg2rad(steering_limit)
-#	$tmpParent/sedanSports/wheel_frontRight.rotation.y = steer_angle*2
-#	$tmpParent/sedanSports/wheel_frontLeft.rotation.y = steer_angle*2
-#	acceleration = Vector3.ZERO
-#	if Input.is_action_pressed("accelerate"):
-#		acceleration = -transform.basis.z * engine_power
-#	if Input.is_action_pressed("brake"):
-#		acceleration = -transform.basis.z * braking
+	var turn = Input.get_action_strength("steer_left")/3
+	turn -= Input.get_action_strength("steer_right") /3
+	steer_angle = turn * deg2rad(steering_limit)
+	$tmpParent/sedanSports/wheel_frontRight.rotation.y = steer_angle*2
+	$tmpParent/sedanSports/wheel_frontLeft.rotation.y = steer_angle*2
+	acceleration = Vector3.ZERO
+	if Input.is_action_pressed("accelerate"):
+		acceleration = -transform.basis.z * engine_power
+	if Input.is_action_pressed("brake"):
+		acceleration = -transform.basis.z * braking
 	pass
 
 func add_rays():

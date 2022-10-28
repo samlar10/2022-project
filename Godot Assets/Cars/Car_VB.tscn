@@ -30,13 +30,14 @@ mesh = SubResource( 4 )
 material/0 = SubResource( 5 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.30016, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.30912, 0 )
 shape = SubResource( 6 )
 
 [node name="front_left_wheel" type="VehicleWheel" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.902997, 1 )
 use_as_steering = true
 wheel_radius = 0.4
+suspension_travel = 3.0
 suspension_stiffness = 50.0
 damping_compression = 1.9
 damping_relaxation = 2.0
@@ -47,9 +48,10 @@ mesh = SubResource( 7 )
 material/0 = SubResource( 8 )
 
 [node name="front_right_wheel" type="VehicleWheel" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, 1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.902997, 1 )
 use_as_steering = true
 wheel_radius = 0.4
+suspension_travel = 3.0
 suspension_stiffness = 50.0
 damping_compression = 1.9
 damping_relaxation = 2.0
@@ -60,9 +62,10 @@ mesh = SubResource( 7 )
 material/0 = SubResource( 8 )
 
 [node name="back_left_wheel" type="VehicleWheel" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, -1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.902997, -1 )
 use_as_traction = true
 wheel_radius = 0.4
+suspension_travel = 3.0
 suspension_stiffness = 50.0
 damping_compression = 1.9
 damping_relaxation = 2.0
@@ -73,9 +76,10 @@ mesh = SubResource( 7 )
 material/0 = SubResource( 8 )
 
 [node name="back_right_wheel" type="VehicleWheel" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, -1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.902997, -1 )
 use_as_traction = true
 wheel_radius = 0.4
+suspension_travel = 3.0
 suspension_stiffness = 50.0
 damping_compression = 1.9
 damping_relaxation = 2.0

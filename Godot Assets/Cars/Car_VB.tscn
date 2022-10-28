@@ -30,7 +30,7 @@ mesh = SubResource( 4 )
 material/0 = SubResource( 5 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.30912, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.66996, 0 )
 shape = SubResource( 6 )
 
 [node name="front_left_wheel" type="VehicleWheel" parent="."]
